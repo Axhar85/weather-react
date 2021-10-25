@@ -1,10 +1,17 @@
+import React from "react";
 
-import './App.css';
+const api= {
+  key: "8d974cee563091b9e3d5e8e081b7f766",
+  base: "https://api.openweathermap.org/data/2.5/"
+}
+
 
 function App() {
   return (
     <div className="App">
-      <h1>weather</h1>
+      <div className="search-box">
+        <input type="text" className="search-bar" placeholder="Search...."></input>
+      </div>
     </div>
   );
 }
