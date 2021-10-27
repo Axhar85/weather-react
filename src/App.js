@@ -15,7 +15,10 @@ function App() {
     if (e.key === "Enter") {
       fetch(`${api.base}weather?q=4{query}&uniits=metric&APIID=${api.key}`)
         .then(res =>res.json)
-        .then(result => setWeather(result));
+        .then(result =>  {
+          setWeather(result);
+          setQuery('');
+        })
     }
   }
   const dateBuilder = (d) => {
