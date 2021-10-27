@@ -9,16 +9,17 @@ const api= {
 function App() {
 
   const [query, setQuery] = useState('');
-  const [ weather, setWeather]= useState({});
+  const [weather, setWeather] = useState({});
 
-  const search = e => {
-    if (e.key === "Enter") {
-      fetch(`${api.base}weather?q=4{query}&uniits=metric&APIID=${api.key}`)
-        .then(res =>res.json)
-        .then(result =>  {
+  const search = evt => {
+    if (evt.key === "Enter") {
+      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+        .then(res => res.json())
+        .then(result => {
           setWeather(result);
           setQuery('');
-        })
+          console.log(result);
+        });
     }
   }
   const dateBuilder = (d) => {
@@ -57,9 +58,9 @@ function App() {
           </div>
           <div className="weather-box">
             <div className="temp">
-              15C
+              {Math.round(weather.main.temp)}°c
             </div>
-            <div className="weather">Sunny</div>
+            <div className="weather">{weather.weather[0].main}</div>
           </div>
         </div>
         ) : ('')}
