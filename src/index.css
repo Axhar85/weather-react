@@ -1,15 +1,17 @@
 * {
-  margin: 0;
+  margin: 50;
   padding: 0;
   box-sizing: border-box;
+  display: revert;
 }
 
 body {
   font-family: 'montseratt', sans-serif;
+
 }
 
 .app {
-  background-image: url('./assets/cold-bg.jpg');
+  background-image: url('./assets/pixabay.jpg');
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease-out;
