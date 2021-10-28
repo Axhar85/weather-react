@@ -10,6 +10,13 @@ body {
 
 }
 
+.heading {
+  padding: 20px;
+  display: flex;
+
+
+}
+
 .app {
   background-image: url('./assets/pixabay.jpg');
   background-size: cover;
@@ -18,7 +25,7 @@ body {
 }
 
 .app.warm {
-  background-image: url('./assets/warm-bg.jpg');
+  background-image: url('./assets/amber.jpg');
 }
 
 main {
