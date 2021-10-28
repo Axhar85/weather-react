@@ -45,7 +45,7 @@ function App() {
 
       <main>
       <div className="heading">
-          <h1>Check Weather</h1>
+          <h1>Weather Check</h1>
       </div>
      
       <div className="search-box">
