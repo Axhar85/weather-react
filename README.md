@@ -1,7 +1,7 @@
 # Weather App in React
 
 
-
+![ReactJS Weather Website Template](Weather-app.png?raw=true "ReactJS Resume Website Template")
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
